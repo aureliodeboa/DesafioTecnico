@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #e5e7eb;
+  --tooltip-text: #111827;
+}
+
+[class~="dark"] {
+  --tooltip-bg: #1f2937;
+  --tooltip-border: #374151;
+  --tooltip-text: #f3f4f6;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
