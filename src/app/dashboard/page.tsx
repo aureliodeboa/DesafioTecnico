@@ -5,7 +5,7 @@ import { Users, DollarSign, TrendingUp, ShoppingCart, Search } from 'lucide-reac
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-
+import ThemeToggle from '@/components/ThemeToggle';
 
 
 type Props ={
@@ -50,34 +50,37 @@ const Dashboard = ({ onLogout }: Props) => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Dashboard</h1>
+          <h1 className="text-2xl font-bold dark:text-white">Dashboard</h1>
+          <div className="flex items-center gap-4">
+          <ThemeToggle />
           <Button onClick={onLogout}>Sair</Button>
+        </div>
         </div>
         
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="text-gray-500">Vendas Totais</p>
-                  <p className="text-2xl font-bold">R$ 54.350</p>
-                  <p className="text-sm text-green-500">+12% em relação ao mês anterior</p>
-                </div>
-                <DollarSign className="text-blue-500" size={24} />
-              </div>
-            </CardContent>
-          </Card>
+        <Card className="bg-white dark:bg-gray-800">
+        <CardContent className="p-6">
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="text-gray-500 dark:text-gray-400 font-semibold">Vendas Totais</p>
+              <p className="text-2xl font-bold dark:text-white">R$ 54.350</p>
+              <p className="text-sm text-green-500">+12% em relação ao mês anterior</p>
+            </div>
+            <DollarSign className="text-blue-500" size={24} />
+          </div>
+        </CardContent>
+      </Card>
           
-          <Card>
+          <Card  className="bg-white dark:bg-gray-800">
             <CardContent className="p-6">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-gray-500">Novos Clientes</p>
-                  <p className="text-2xl font-bold">145</p>
+                  <p className="text-gray-500 dark:text-gray-400 font-semibold">Novos Clientes</p>
+                  <p className="text-2xl font-bold dark:text-white">145</p>
                   <p className="text-sm text-green-500">+5% em relação ao mês anterior</p>
                 </div>
                 <Users className="text-green-500" size={24} />
@@ -85,12 +88,12 @@ const Dashboard = ({ onLogout }: Props) => {
             </CardContent>
           </Card>
           
-          <Card>
+          <Card  className="bg-white dark:bg-gray-800">
             <CardContent className="p-6">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-gray-500">Taxa de Conversão</p>
-                  <p className="text-2xl font-bold">12.5%</p>
+                  <p className="text-gray-500 dark:text-gray-400 font-semibold">Taxa de Conversão</p>
+                  <p className="text-2xl font-bold dark:text-white">12.5%</p>
                   <p className="text-sm text-red-500">-2% em relação ao mês anterior</p>
                 </div>
                 <TrendingUp className="text-purple-500" size={24} />
@@ -98,12 +101,12 @@ const Dashboard = ({ onLogout }: Props) => {
             </CardContent>
           </Card>
           
-          <Card>
+          <Card className="bg-white dark:bg-gray-800">
             <CardContent className="p-6">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-gray-500">Pedidos</p>
-                  <p className="text-2xl font-bold">290</p>
+                  <p className="text-gray-500 dark:text-gray-400 font-semibold">Pedidos</p>
+                  <p className="text-2xl font-bold dark:text-white">290</p>
                   <p className="text-sm text-green-500">+8% em relação ao mês anterior</p>
                 </div>
                 <ShoppingCart className="text-orange-500" size={24} />
@@ -162,7 +165,7 @@ const Dashboard = ({ onLogout }: Props) => {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b">
+                  <tr className="border-b dark:border-gray-700">
                     <th className="text-left p-3">Nome</th>
                     <th className="text-left p-3">Email</th>
                     <th className="text-left p-3">Status</th>

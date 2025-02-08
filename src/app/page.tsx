@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Login from './auth/login';
 import Dashboard from './dashboard/page';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -14,11 +15,16 @@ const App = () => {
     setIsLoggedIn(false);
   };
 
-  return isLoggedIn ? (
-    <Dashboard onLogout={handleLogout} />
-  ) : (
-    <Login onLogin={handleLogin} />
-  );
+  return (
+    <ThemeProvider>
+    {isLoggedIn ? (
+      <Dashboard onLogout={() => setIsLoggedIn(false)} />
+    ) : (
+      <Login onLogin={() => setIsLoggedIn(true)} />
+    )}
+  </ThemeProvider>
+  )
+
 };
 
 export default App;
