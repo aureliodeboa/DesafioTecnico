@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard View
 
-## Getting Started
+Um dashboard interativo desenvolvido com React, TypeScript e Tailwind CSS, apresentando visualização de dados, gerenciamento de usuários e métricas de negócios.
 
-First, run the development server:
+## 🚀 Demonstração
 
+ ---subir o site
+
+## ✨ Funcionalidades
+
+- 🔐 Autenticação de usuário (simulada)
+- 📊 Gráficos interativos usando Recharts
+- 👥 Lista de usuários com paginação e filtro
+- 📈 Cards de métricas com KPIs
+- 📱 Design responsivo
+- 🎨 Interface moderna com Tailwind CSS e shadcn/ui
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Recharts](https://recharts.org/)
+- [Lucide React](https://lucide.dev/)
+
+## 📋 Pré-requisitos
+
+- Node.js (versão 14 ou superior)
+- npm ou yarn
+
+## 🚀 Como executar o projeto
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/aureliodeboa/desafiotecnico.git
+cd desafiotecnico
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o projeto em modo de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse o projeto em [http://localhost:3000](http://localhost:3000)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Configuração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para instalar os componentes do shadcn/ui necessários:
 
-## Deploy on Vercel
+```bash
+npx shadcn-ui@latest add button
+npx shadcn-ui@latest add card
+npx shadcn-ui@latest add input
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👤 Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Aurélio**
+
+* Github: [@aureliodeboa](https://github.com/aureliodeboa)
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+## 🤝 Contribuindo
+
+Contribuições, issues e pedidos de features são bem-vindos!
+Sinta-se à vontade para verificar a [página de issues](https://github.com/aureliodeboa/desafiotecnico/issues).
+
+---
+⌨️ com ❤️ por [aureliodeboa](https://github.com/aureliodeboa) 😊
