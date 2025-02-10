@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Login from './auth/login';
-import { Dashboard } from './dashboard/page';
+import Dashboard  from './dashboard/page';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 
 const App = () => {
