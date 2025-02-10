@@ -250,4 +250,3 @@ const Dashboard = ({ onLogout }: Props) => {
   );
 };
 
-export default Dashboard;
