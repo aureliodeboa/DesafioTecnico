@@ -13,7 +13,7 @@ interface dashboardprops  {
     onLogout: () => void;
 }
 
- const  Dashboard = ({ onLogout }: dashboardprops ) => {
+ const  Dashboard : React.FC<dashboardprops> = ({ onLogout }: dashboardprops ) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const itemsPerPage = 5;
