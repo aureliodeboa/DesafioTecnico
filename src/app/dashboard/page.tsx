@@ -14,7 +14,7 @@ type Props = {
 
 
 
- const  Dashboard = ({ onLogout }: Props) => {
+ export const  Dashboard = ({ onLogout }: Props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const itemsPerPage = 5;
@@ -249,5 +249,3 @@ type Props = {
     </div>
   );
 };
-
-export default Dashboard;
