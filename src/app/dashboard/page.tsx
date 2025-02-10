@@ -8,13 +8,12 @@ import { Button } from "@/components/ui/button";
 import ThemeToggle from '@/components/ThemeToggle';
 
 
-type Props = {
+
+interface dashboardprops  {
     onLogout: () => void;
 }
 
-
-
- const  Dashboard = ({ onLogout }: Props) => {
+ const  Dashboard = ({ onLogout }: dashboardprops ) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const itemsPerPage = 5;
